@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Income Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1> Income Expense Tracker</h1>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Transcation Name" required />
+            <input type="number" id="expense-amount" placeholder="Amount" required />
+            <input type="date" id="expense-date" required />
+            <button type="submit">Add Expense</button>
+
+
+            </select>
+
+        </form>
+
+        <div class="filter">
+
+            <label for="filter-category">Filter by Category:</label><br><br>
+            <input type="radio" id="all" name="fav_language" value="all">
+            <label for="all">all</label><br>
+            <input type="radio" id="Income" name="fav_language" value="Income">
+            <label for="Income">Income</label><br>
+            <input type="radio" id="Expense" name="fav_language" value="Expense">
+            <label for="Expense">Expense</label>
+        </div>
+
+
+        <br>
+        <div class="expense-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list"></tbody>
+            </table>
+            <div class="total-amount">
+                <strong>Total:</strong>₹<span id="total-amount">0</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
